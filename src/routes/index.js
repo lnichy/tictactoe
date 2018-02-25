@@ -1,8 +1,8 @@
 import React from 'react'
 import {Route, IndexRoute} from 'react-router'
 import Template from '../containers/Template'
-import Home from '../containers/Home'
-import Profile from '../containers/Profile'
+import TicTacToe from '../containers/TicTacToe'
+import About from '../containers/About';
 
 
 const createRoutes = () => {
@@ -12,11 +12,11 @@ const createRoutes = () => {
             component={Template}
         >
             <IndexRoute
-                component={Home}
+                component={TicTacToe}
             />
             <Route
-                path={'/profile'}
-                component={Profile}
+                path={'/about'}
+                component={About}
             />
         </Route>
 
